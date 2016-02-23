@@ -1,4 +1,4 @@
-# scroll-to-anchor
+# Scroll-to-AnchorPlugin
 
 jQuery Plugin which adds a smooth scrolling animation to on-page links (means links which point to an internal target location within the current HTML document).
 
