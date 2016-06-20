@@ -1,4 +1,6 @@
-# Scroll-to-AnchorPlugin
+HTML header: <script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+# Scroll-to-Anchor Plugin
 
 jQuery Plugin which adds a smooth scrolling animation to on-page links (means links which point to an internal target location within the current HTML document).
 
@@ -9,11 +11,13 @@ Otherwise then the most similar plugins the duration of the animation depends on
 
 Check if your on-page links are formatted correctly and the target is valid:
 
+<!--?prettify?-->
 	<a href="#getting-started">Jump to readme</a>
 	
 	<section id="getting-started">
 		<h2>Getting started</h2> 
 	</section>
+
 
 Include jQuery in the head of our your HTML document (e.g. by using the jQuery CDN):
 
