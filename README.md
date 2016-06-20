@@ -53,7 +53,7 @@ The plugin always attaches the effect to all on-page links (the ones that start 
 
 ### Change the scrolling speed
 
-You can change the scrolling speed by add an object with the option `speed`. The speed is set an number in pixels per second, so the greater value is the faster the page get scrolled (default is 3000).
+You can change the scrolling speed by add an object with the option `speed`. The speed is set as a number in pixels per second, so the greater value is the faster the page get scrolled (default is 3000).
 
 ```js
 $(document).scrollToAnchor({
@@ -63,7 +63,7 @@ $(document).scrollToAnchor({
 
 ### Change the minimum duration
 
-You can set a minimum for the duration, so short distances will be also pretty animated. The duration is set as an number in milliseconds (default is 200).
+You can set a minimum for the duration, so short distances will be also pretty animated. The duration is set as a number in milliseconds (default is 200).
 
 ```js
 $(document).scrollToAnchor({
