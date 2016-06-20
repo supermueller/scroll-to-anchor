@@ -1,4 +1,4 @@
-HTML header: <script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+<script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 
 # Scroll-to-Anchor Plugin
 
