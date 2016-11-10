@@ -1,8 +1,8 @@
 # Scroll-to-Anchor Plugin
 
-jQuery Plugin for adding a smooth scroll animation to on-page links (means links which point to an internal target location within the current HTML document).
+jQuery Plugin for adding smooth scroll animations to on-page links (means links which point to an internal target location within the current HTML document).
 
-The duration of the scroll animation depends on how far the content has to be scrolled, so all scroll animations have the same speed.
+The duration of the scroll animations depends on how far the content has to be scrolled, so all scroll animations have the same speed.
 
 
 ## Getting started
