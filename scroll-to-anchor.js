@@ -1,7 +1,7 @@
 /**
  * @preserve
- * jQuery Scroll To Anchor - v1.0.1
- * Copyright (c) 2014–2016 Karsten Müller
+ * jQuery Scroll To Anchor - v1.0.2
+ * Copyright (c) 2014–2017 Karsten Müller
  */
 
 /**
@@ -24,11 +24,11 @@
 
 			var container = $(this);
 
-			if ($("a[href^=#]", container).length !== 0){
+			if ($("a[href^=\\#]", container).length !== 0){
 
 				var settings = $.extend({}, defaults);
 
-				$("a[href^=#]", container).each(function(e){
+				$("a[href^=\\#]", container).each(function(e){
 
 					var id = $(this).attr("href").replace(/.*#/, "");
 
