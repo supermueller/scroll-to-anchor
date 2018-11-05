@@ -1,7 +1,7 @@
 /**
  * @preserve
- * jQuery Scroll To Anchor - v1.0.2
- * Copyright (c) 2014–2017 Karsten Müller
+ * jQuery Scroll To Anchor
+ * Copyright (c) Karsten Müller
  */
 
 /**
