@@ -13,7 +13,8 @@
 
 	var defaults = {
 		speed: 3000, // Scrolling speed (in pixels per second)
-		duration_min: 200 // Minimum duration (in ms)
+		duration_min: 200, // Minimum duration (in ms)
+		selector: "a[href^=\\#]" // Selector for triggers
 	};
 
 	$.fn.scrollToAnchor = function(options){
@@ -22,13 +23,12 @@
 
 		return this.each(function(){
 
-			var container = $(this);
+			var container = $(this),
+                settings = $.extend({}, defaults, options);
 
-			if ($("a[href^=\\#]", container).length !== 0){
+			if ($(settings.selector, container).length !== 0){
 
-				var settings = $.extend({}, defaults);
-
-				$("a[href^=\\#]", container).each(function(e){
+				$(settings.selector, container).each(function(e){
 
 					var id = $(this).attr("href").replace(/.*#/, "");
 
