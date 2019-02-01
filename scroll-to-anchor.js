@@ -36,10 +36,10 @@
 
                         e.preventDefault();
 
-                        if ($("#" + id).length !== 0){
-                            var top = $("#" + id).offset().top;
-                        } else {
+                        if (id === "" || $("#" + id).length === 0){
                             var top = 0;
+                        } else {
+                            var top = $("#" + id).offset().top;
                         }
 
                         var distance = Math.abs($(window).scrollTop() - top);
