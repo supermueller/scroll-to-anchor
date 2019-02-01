@@ -11,59 +11,59 @@
 
 (function ( $ ){
 
-	var defaults = {
-		speed: 3000, // Scrolling speed (in pixels per second)
-		duration_min: 200, // Minimum duration (in ms)
-		selector: "a[href^=\\#]" // Selector for triggers
-	};
+    var defaults = {
+        speed: 3000, // Scrolling speed (in pixels per second)
+        duration_min: 200, // Minimum duration (in ms)
+        selector: "a[href^=\\#]" // Selector for triggers
+    };
 
-	$.fn.scrollToAnchor = function(options){
+    $.fn.scrollToAnchor = function(options){
 
-		var options = options || {};
+        var options = options || {};
 
-		return this.each(function(){
+        return this.each(function(){
 
-			var container = $(this),
+            var container = $(this),
                 settings = $.extend({}, defaults, options);
 
-			if ($(settings.selector, container).length !== 0){
+            if ($(settings.selector, container).length !== 0){
 
-				$(settings.selector, container).each(function(e){
+                $(settings.selector, container).each(function(e){
 
-					var id = $(this).attr("href").replace(/.*#/, "");
+                    var id = $(this).attr("href").replace(/.*#/, "");
 
-					$(this).click(function(e){
+                    $(this).click(function(e){
 
-						e.preventDefault();
+                        e.preventDefault();
 
-						if ($("#" + id).length !== 0){
-							var top = $("#" + id).offset().top;
-						} else {
-							var top = 0;
-						}
+                        if ($("#" + id).length !== 0){
+                            var top = $("#" + id).offset().top;
+                        } else {
+                            var top = 0;
+                        }
 
-						var distance = Math.abs($(window).scrollTop() - top);
+                        var distance = Math.abs($(window).scrollTop() - top);
 
-						var duration = distance/settings.speed * 1000;
+                        var duration = distance/settings.speed * 1000;
 
-						duration = duration < settings.duration_min ? settings.duration_min : duration;
+                        duration = duration < settings.duration_min ? settings.duration_min : duration;
 
-						$("html, body").animate(
-							{ scrollTop: top },
-							duration,
-							function(){
-								location.hash = id;
-							}
-						);
+                        $("html, body").animate(
+                            { scrollTop: top },
+                            duration,
+                            function(){
+                                location.hash = id;
+                            }
+                        );
 
-					});
+                    });
 
-				});
+                });
 
-			}
+            }
 
-		});
+        });
 
-	}
+    }
 
 }( jQuery ));
