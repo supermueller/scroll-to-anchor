@@ -14,7 +14,7 @@
     var defaults = {
         speed: 3000, // Scrolling speed (in pixels per second)
         duration_min: 200, // Minimum duration (in ms)
-		selector: "a[href^='#'], a[href^='/#']" // Selector for triggers
+	selector: "a[href^='#'], a[href^='/#']" // Selector for triggers
     };
 
     $.fn.scrollToAnchor = function(options){
